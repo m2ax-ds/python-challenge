@@ -3,12 +3,9 @@ import csv
 
 # counter for rows 
 count_rows=0
-#total_PL=0
 PL_col =[]
 PL_date=[]
 date_row=[]
-#max_PL =[]
-#min_PL = []
 # file path 
 csv_path= "resources/budget_data.csv"
 # open csv file and restore in csv_reader 
@@ -35,7 +32,7 @@ print(f' Greatest Decrease in Profits: {PL_date[inex_min] }  $({min(PL_col)}) ')
 
 txt_path="analysis/analysis_PyBank.txt"
 with open(txt_path, 'w') as PyBank_result:
-    #txt_writer=txt_writer(PyBank_result)
+    
     PyBank_result.write('Financial Analysis ')
     PyBank_result.write('\n------------------------------------- ')
     PyBank_result.write(f' \nTotal months : {count_rows}')
